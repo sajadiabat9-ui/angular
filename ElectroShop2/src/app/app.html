@@ -1,0 +1,47 @@
+<h1>{{ storeName }}</h1>
+
+<p>{{ storeDescription }}</p>
+
+<p>{{ storeAddress }}</p>
+
+<p>Total Products: {{ totalProducts }}</p>
+
+<p>Currency: {{ currency }}</p>
+
+<h2>Featured Product</h2>
+
+<h3>name ; {{ featuredProduct.name }}</h3>
+<p>description ; {{ featuredProduct.description }}</p>
+
+<p>Original Price: ${{ featuredProduct.price }}</p>
+
+<p>Discount: {{ discountPercentage }}%</p>
+
+<p>Final Price: ${{ finalPrice }}</p>
+
+
+
+
+<h2>Our Products</h2>
+
+<p>{{ productNames[1] }} - ${{ productPrices[1] }}</p>
+<p>{{ productNames[2] }} - ${{ productPrices[2] }}</p>
+<p>{{ productNames[3] }} - ${{ productPrices[3] }}</p>
+<p>{{ productNames[4] }} - ${{ productPrices[4] }}</p>
+
+
+
+<h2>{{ storeStatus }}</h2>
+
+
+
+<div> 
+<h2>Store Summary</h2>
+
+<p>Total Products: {{ productsCount }}</p>
+
+<p>Highest Price: ${{ highestPrice }}</p>
+
+<p>Lowest Price: ${{ lowestPrice }}</p>
+
+<p>Total Products Value: ${{ totalValue }}</p> </div>
