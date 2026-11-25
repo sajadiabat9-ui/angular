@@ -1,0 +1,30 @@
+h2 {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    height: 120px;
+    object-fit: contain;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}

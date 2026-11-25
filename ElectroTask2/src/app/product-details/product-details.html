@@ -1,0 +1,51 @@
+<h2>Product Details</h2>
+
+<img [src]="productImage" width="200">
+
+<h3>{{ productName }}</h3>
+
+<p>{{ productDescription }}</p>
+
+<p>Price: {{ productPrice }} JD</p>
+
+<p>Quantity: {{ quantity }}</p>
+
+<p>Discount: {{ discountPercentage }}%</p>
+
+<p>Total Price: {{ productPrice * quantity }} JD</p>
+
+<hr>
+
+<h3>Edit Product</h3>
+
+<label>Product Name:</label>
+<input type="text" [(ngModel)]="productName">
+
+<br>
+
+<label>Description:</label>
+<input type="text" [(ngModel)]="productDescription">
+
+<br>
+
+<label>Price:</label>
+<input type="number" [(ngModel)]="productPrice">
+
+<br>
+
+<label>Quantity:</label>
+<input type="number" [(ngModel)]="quantity" min="1">
+
+<br>
+
+<label>Discount:</label>
+<input type="number" [(ngModel)]="discountPercentage">
+
+<br>
+
+<label>Available:</label>
+<input type="checkbox" [(ngModel)]="isAvailable">
+
+<br>
+
+<button [disabled]="!isAvailable">Buy Now</button>
