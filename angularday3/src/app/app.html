@@ -1,0 +1,17 @@
+<h1>ElectroShop</h1>
+//from output
+<app-product-details-component
+  [productName]="productName()"
+  [description]="description()"
+  [price]="price()"
+  [isAvailable]="isAvailable()"
+  (addToCart)="receiveCart($event)">
+</app-product-details-component>
+
+<app-shopping-cart-component
+  [cartName]="cartName"
+  [cartPrice]="cartPrice"
+  [cartQuantity]="cartQuantity">
+</app-shopping-cart-component>
+
+<button (click)="changeProduct()">Change Product</button>

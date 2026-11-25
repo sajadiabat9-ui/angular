@@ -1,0 +1,20 @@
+<h2>Product Details</h2>
+
+<h3>{{ productName }}</h3>
+
+<p>{{ description }}</p>
+
+<p>Price: ${{ price }}</p>
+
+<p>Status: {{ isAvailable ? 'Available' : 'Unavailable' }}</p>
+
+<button (click)="decreaseQuantity()">-</button>
+
+<span>{{ quantity() }}</span>
+
+<button (click)="increaseQuantity()">+</button>
+
+<br><br>
+
+
+<button (click)="sendToCart()">Add to Cart</button>
