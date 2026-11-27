@@ -1,0 +1,31 @@
+.card {
+  border: 1px solid gray;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+}
+
+img {
+  height: 120px;
+  object-fit: contain;
+}
+
+.available-card {
+  background-color: lightgreen;
+}
+
+.unavailable-card {
+  background-color: lightcoral;
+}
+
+.discount-card {
+  border: 2px solid orange;
+}
+
+.premium-card {
+  box-shadow: 0 0 10px gold;
+}
